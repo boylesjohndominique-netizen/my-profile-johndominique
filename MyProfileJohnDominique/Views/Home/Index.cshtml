@@ -1,8 +1,22 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="plain-page">
+    <div class="bg-web" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-red" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-blue" aria-hidden="true"></div>
+
+    <div class="home-card panel">
+        <div class="comic-burst" aria-hidden="true"><span>WOW!</span></div>
+        <h1>Welcome to the Web</h1>
+        <p>
+            This is a personal profile experience built with ASP.NET Core MVC,
+            Razor syntax, and HTML Helpers — styled like a comic book hero file.
+        </p>
+        <a href="/" class="cta-button">
+            <i class="fa-solid fa-spider" aria-hidden="true"></i>
+            View My Profile
+        </a>
+    </div>
+</section>

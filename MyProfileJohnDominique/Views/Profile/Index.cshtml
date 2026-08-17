@@ -12,117 +12,196 @@
     };
 }
 
-<section class="profile-page" aria-labelledby="profile-title">
-    <div class="ambient ambient-one"></div>
-    <div class="ambient ambient-two"></div>
-    <div class="ambient ambient-three"></div>
+<section class="spidey-page" aria-labelledby="profile-title">
+    <div class="bg-web" aria-hidden="true"></div>
+    <div class="bg-halftone" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-red" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-blue" aria-hidden="true"></div>
 
-    <nav class="glass-nav" aria-label="Profile sections">
-        <a href="#profile" class="nav-brand">
-            <span class="nav-spark">✦</span>
-            My Profile
+    <nav class="spidey-nav" aria-label="Profile sections">
+        <a href="#identity" class="nav-brand" aria-label="My Profile home">
+            <i class="fa-solid fa-spider" aria-hidden="true"></i>
+            <span>My Profile</span>
         </a>
-        <a href="#overview">About</a>
-        <a href="#edit">Edit</a>
+        <a href="#identity" data-spy="identity">
+            <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+            <span>About</span>
+        </a>
+        <a href="#stats" data-spy="stats">
+            <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+            <span>Stats</span>
+        </a>
+        <a href="#edit" data-spy="edit">
+            <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+            <span>Edit</span>
+        </a>
     </nav>
 
-    <div class="profile-shell">
-        <header id="profile" class="profile-hero glass-panel rise-in">
+    <div class="page-shell">
+        <!-- ============ HERO / SECRET IDENTITY ============ -->
+        <header id="identity" class="hero-panel panel rise-in">
+            <div class="hero-web" aria-hidden="true"></div>
+            <div class="comic-burst" aria-hidden="true"><span>THWIP!</span></div>
+
+            <div class="swing-wrap" aria-hidden="true">
+                <span class="swing-line"></span>
+                <i class="fa-solid fa-spider"></i>
+            </div>
+
             <div class="status-pill">
-                <span class="status-dot"></span>
+                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
                 Student Developer
             </div>
 
             <div class="avatar-wrap" aria-label="Profile initials">
-                <div class="avatar-ring">
-                    <span>JD</span>
-                </div>
+                <div class="avatar-ring"><span>JD</span></div>
+                <div class="spider-badge"><i class="fa-solid fa-spider" aria-hidden="true"></i></div>
             </div>
 
-            <p class="eyebrow">My Profile</p>
+            <p class="eyebrow"><i class="fa-solid fa-user-secret" aria-hidden="true"></i> Secret Identity</p>
             <h1 id="profile-title">@Model.Name</h1>
             <p class="course-line">@Model.Course</p>
-            <p class="motto-pill">"@Model.Motto"</p>
+            <p class="motto-pill">
+                <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                "@Model.Motto"
+            </p>
+            <a href="#edit" class="cta-button">
+                <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+                Update My Profile
+            </a>
         </header>
 
-        <section class="quick-grid" aria-label="Quick profile information">
-            <article class="info-card glass-panel rise-in delay-one">
-                <span class="info-icon">🎂</span>
+        <!-- ============ THWIP MARQUEE ============ -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <div class="marquee-group">
+                    <span>THWIP</span><i class="fa-solid fa-spider"></i>
+                    <span>Student Developer</span><i class="fa-solid fa-bolt"></i>
+                    <span>Code &amp; Create</span><i class="fa-solid fa-code"></i>
+                    <span>Full-Stack in Training</span><i class="fa-solid fa-rocket"></i>
+                    <span>With Great Code Comes Great Responsibility</span><i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="marquee-group" aria-hidden="true">
+                    <span>THWIP</span><i class="fa-solid fa-spider"></i>
+                    <span>Student Developer</span><i class="fa-solid fa-bolt"></i>
+                    <span>Code &amp; Create</span><i class="fa-solid fa-code"></i>
+                    <span>Full-Stack in Training</span><i class="fa-solid fa-rocket"></i>
+                    <span>With Great Code Comes Great Responsibility</span><i class="fa-solid fa-book-open"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ QUICK STATS ============ -->
+        <section id="stats" class="stats-grid" aria-label="Quick profile information">
+            <article class="stat-card panel rise-in delay-one">
+                <div class="stat-icon icon-red"><i class="fa-solid fa-cake-candles" aria-hidden="true"></i></div>
                 <p>Age</p>
                 <strong>@Model.Age</strong>
+                <span class="stat-swoosh" aria-hidden="true"></span>
             </article>
 
-            <article class="info-card glass-panel rise-in delay-two">
-                <span class="info-icon">🎨</span>
+            <article class="stat-card panel rise-in delay-two">
+                <div class="stat-icon icon-blue"><i class="fa-solid fa-gamepad" aria-hidden="true"></i></div>
                 <p>Hobby</p>
                 <strong>@Model.Hobby</strong>
+                <span class="stat-swoosh" aria-hidden="true"></span>
             </article>
 
-            <article class="info-card glass-panel rise-in delay-three">
-                <span class="info-icon">📘</span>
+            <article class="stat-card panel rise-in delay-three">
+                <div class="stat-icon icon-red"><i class="fa-solid fa-book-open" aria-hidden="true"></i></div>
                 <p>Favorite Subject</p>
                 <strong>@Model.FavoriteSubject</strong>
+                <span class="stat-swoosh" aria-hidden="true"></span>
             </article>
 
-            <article class="info-card glass-panel rise-in delay-four">
-                <span class="info-icon">💻</span>
+            <article class="stat-card panel rise-in delay-four">
+                <div class="stat-icon icon-blue"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
                 <p>Career Goal</p>
                 <strong>@Model.CareerGoal</strong>
+                <span class="stat-swoosh" aria-hidden="true"></span>
             </article>
         </section>
 
-        <section id="overview" class="content-grid">
-            <article class="overview-card glass-panel rise-in delay-two">
+        <!-- ============ ABOUT + POWER REPORT ============ -->
+        <section class="content-grid">
+            <article class="identity-card panel rise-in delay-two">
                 <div class="section-heading">
-                    <p class="eyebrow">Personal Overview</p>
+                    <p class="eyebrow"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i> Secret Identity</p>
                     <h2>About Me</h2>
                 </div>
 
                 <dl class="detail-list">
                     <div>
-                        <dt>Name</dt>
+                        <dt><i class="fa-solid fa-user" aria-hidden="true"></i> Name</dt>
                         <dd>@Model.Name</dd>
                     </div>
                     <div>
-                        <dt>Course</dt>
+                        <dt><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Course</dt>
                         <dd>@Model.Course</dd>
                     </div>
                     <div>
-                        <dt>Age</dt>
+                        <dt><i class="fa-solid fa-cake-candles" aria-hidden="true"></i> Age</dt>
                         <dd>@Model.Age</dd>
                     </div>
                     <div>
-                        <dt>Hobby</dt>
+                        <dt><i class="fa-solid fa-gamepad" aria-hidden="true"></i> Hobby</dt>
                         <dd>@Model.Hobby</dd>
                     </div>
                     <div>
-                        <dt>Favorite Subject</dt>
+                        <dt><i class="fa-solid fa-book-open" aria-hidden="true"></i> Favorite Subject</dt>
                         <dd>@Model.FavoriteSubject</dd>
                     </div>
                     <div>
-                        <dt>Career Goal</dt>
+                        <dt><i class="fa-solid fa-rocket" aria-hidden="true"></i> Career Goal</dt>
                         <dd>@Model.CareerGoal</dd>
                     </div>
                     <div>
-                        <dt>Email</dt>
+                        <dt><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</dt>
                         <dd>@Model.Email</dd>
                     </div>
                     <div>
-                        <dt>Motto</dt>
+                        <dt><i class="fa-solid fa-quote-left" aria-hidden="true"></i> Motto</dt>
                         <dd>@Model.Motto</dd>
                     </div>
                 </dl>
             </article>
 
-            <article class="razor-card glass-panel rise-in delay-three">
-                <p class="eyebrow">Razor Syntax</p>
-                <h2>My Profile Activity</h2>
+            <article class="power-card panel rise-in delay-three">
+                <div class="section-heading">
+                    <p class="eyebrow"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Razor Report</p>
+                    <h2>Super Powers</h2>
+                </div>
+
                 <p>
-					This is created solely for the purpose of demonstrating the use of Razor syntax in ASP.NET Core MVC. 
-                    The profile information is dynamically rendered using Razor expressions, allowing for a seamless integration 
-                    of C# code within the HTML markup.
+                    This profile is created solely to demonstrate Razor syntax in ASP.NET Core MVC.
+                    Every value below is rendered dynamically with <code>@@Model.Property</code>,
+                    letting C# code live right inside the HTML markup.
                 </p>
-                <div class="code-chip-row" aria-label="Required MVC features">
+
+                <div class="power-list" aria-label="Skill levels">
+                    <div class="power-row">
+                        <span><i class="fa-solid fa-code" aria-hidden="true"></i> C# Coding</span>
+                        <b>96%</b>
+                        <div class="power-bar"><span style="width: 96%"></span></div>
+                    </div>
+                    <div class="power-row">
+                        <span><i class="fa-solid fa-spider" aria-hidden="true"></i> Web-Slinging</span>
+                        <b>100%</b>
+                        <div class="power-bar"><span style="width: 100%"></span></div>
+                    </div>
+                    <div class="power-row">
+                        <span><i class="fa-solid fa-gamepad" aria-hidden="true"></i> Gaming Reflexes</span>
+                        <b>88%</b>
+                        <div class="power-bar"><span style="width: 88%"></span></div>
+                    </div>
+                    <div class="power-row">
+                        <span><i class="fa-solid fa-rocket" aria-hidden="true"></i> Ambition</span>
+                        <b>100%</b>
+                        <div class="power-bar"><span style="width: 100%"></span></div>
+                    </div>
+                </div>
+
+                <div class="code-chip-row" aria-label="Rendered Razor values">
                     <span>@Model.Name</span>
                     <span>@Model.Course</span>
                     <span>@Model.FavoriteSubject</span>
@@ -130,9 +209,10 @@
             </article>
         </section>
 
-        <section id="edit" class="edit-card glass-panel rise-in delay-four" aria-labelledby="edit-title">
+        <!-- ============ EDIT PROFILE ============ -->
+        <section id="edit" class="edit-card panel rise-in delay-four" aria-labelledby="edit-title">
             <div class="section-heading">
-                <p class="eyebrow">HTML Helpers</p>
+                <p class="eyebrow"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i> HTML Helpers</p>
                 <h2 id="edit-title">Update My Profile</h2>
             </div>
 
@@ -180,15 +260,16 @@
                 </div>
 
                 <button type="submit" class="save-button">
-                    <span aria-hidden="true">💾</span>
+                    <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i>
                     Save Profile
                 </button>
             </form>
         </section>
 
         <footer class="profile-footer">
+            <i class="fa-solid fa-spider" aria-hidden="true"></i>
             <p>Created by John Dominique G. Boyles</p>
-            <strong>"c# Activity Project"</strong>
+            <strong>C# Activity Project</strong>
         </footer>
     </div>
 </section>

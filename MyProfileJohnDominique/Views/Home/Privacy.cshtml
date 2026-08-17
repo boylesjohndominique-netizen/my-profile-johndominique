@@ -1,6 +1,20 @@
-﻿@{
+@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<section class="plain-page">
+    <div class="bg-web" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-blue" aria-hidden="true"></div>
+
+    <div class="home-card panel">
+        <h1>@ViewData["Title"]</h1>
+        <p>
+            No personal data is collected or stored by this page. It is a laboratory
+            activity built to demonstrate Razor syntax and HTML Helpers in ASP.NET Core MVC.
+        </p>
+        <a href="/" class="cta-button">
+            <i class="fa-solid fa-spider" aria-hidden="true"></i>
+            Back to My Profile
+        </a>
+    </div>
+</section>

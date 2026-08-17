@@ -80,9 +80,7 @@ C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfile
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\hshn1zkogr-{0}-erw9l3u2r3-erw9l3u2r3.gz
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\pj797tvkyq-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\xv39g7mti2-{0}-bqjiyaj88i-bqjiyaj88i.gz
-C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\04o2b48on2-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\h20vob5qso-{0}-61n19gt1b8-61n19gt1b8.gz
-C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\tafr1vib5r-{0}-2aey0jfmcx-2aey0jfmcx.gz
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\whk5lk15jb-{0}-e97sw3ylft-e97sw3ylft.gz
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\e3uqldweul-{0}-e97sw3ylft-e97sw3ylft.gz
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\staticwebassets.build.json
@@ -96,3 +94,6 @@ C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfile
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\MyProfileJohnDominique.genruntimeconfig.cache
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\ref\MyProfileJohnDominique.dll
 C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\MyProfileJohnDominique.sourcelink.json
+C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\tafr1vib5r-{0}-mtjkssyvyj-mtjkssyvyj.gz
+C:\Users\boyle\Documents\VB.NET Sample Projects\MyProfileJohnDominique\MyProfileJohnDominique\obj\Debug\net10.0\compressed\04o2b48on2-{0}-yyoz4jov8g-yyoz4jov8g.gz

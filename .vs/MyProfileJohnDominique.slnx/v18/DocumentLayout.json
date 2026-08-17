@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{729F3EFE-5618-1CC5-9A00-34FAA1C8B104}|MyProfileJohnDominique\\MyProfileJohnDominique.csproj|solutionrelative:myprofilejohndominique\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{729F3EFE-5618-1CC5-9A00-34FAA1C8B104}|MyProfileJohnDominique\\MyProfileJohnDominique.csproj|c:\\users\\boyle\\documents\\vb.net sample projects\\myprofilejohndominique\\myprofilejohndominique\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{729F3EFE-5618-1CC5-9A00-34FAA1C8B104}|MyProfileJohnDominique\\MyProfileJohnDominique.csproj|solutionrelative:myprofilejohndominique\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{729F3EFE-5618-1CC5-9A00-34FAA1C8B104}|MyProfileJohnDominique\\MyProfileJohnDominique.csproj|c:\\users\\boyle\\documents\\vb.net sample projects\\myprofilejohndominique\\myprofilejohndominique\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{729F3EFE-5618-1CC5-9A00-34FAA1C8B104}|MyProfileJohnDominique\\MyProfileJohnDominique.csproj|solutionrelative:myprofilejohndominique\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\Users\\boyle\\Documents\\VB.NET Sample Projects\\MyProfileJohnDominique\\MyProfileJohnDominique\\Models\\Profile.cs",
+              "RelativeDocumentMoniker": "MyProfileJohnDominique\\Models\\Profile.cs",
+              "ToolTip": "C:\\Users\\boyle\\Documents\\VB.NET Sample Projects\\MyProfileJohnDominique\\MyProfileJohnDominique\\Models\\Profile.cs",
+              "RelativeToolTip": "MyProfileJohnDominique\\Models\\Profile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T01:11:00.915Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,20 +45,20 @@
               "RelativeDocumentMoniker": "MyProfileJohnDominique\\Views\\Profile\\Index.cshtml",
               "ToolTip": "C:\\Users\\boyle\\Documents\\VB.NET Sample Projects\\MyProfileJohnDominique\\MyProfileJohnDominique\\Views\\Profile\\Index.cshtml",
               "RelativeToolTip": "MyProfileJohnDominique\\Views\\Profile\\Index.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAACkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-17T00:20:11.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProfileController.cs",
               "DocumentMoniker": "C:\\Users\\boyle\\Documents\\VB.NET Sample Projects\\MyProfileJohnDominique\\MyProfileJohnDominique\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "MyProfileJohnDominique\\Controllers\\ProfileController.cs",
               "ToolTip": "C:\\Users\\boyle\\Documents\\VB.NET Sample Projects\\MyProfileJohnDominique\\MyProfileJohnDominique\\Controllers\\ProfileController.cs",
               "RelativeToolTip": "MyProfileJohnDominique\\Controllers\\ProfileController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA+wBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-17T00:17:45.757Z",
               "EditorCaption": ""

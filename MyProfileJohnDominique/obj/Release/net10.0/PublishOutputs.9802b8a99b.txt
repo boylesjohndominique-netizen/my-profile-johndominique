@@ -1,0 +1,7 @@
+C:\Users\boyle\AppData\Local\Temp\spidey-pub\MyProfileJohnDominique.exe
+C:\Users\boyle\AppData\Local\Temp\spidey-pub\appsettings.Development.json
+C:\Users\boyle\AppData\Local\Temp\spidey-pub\appsettings.json
+C:\Users\boyle\AppData\Local\Temp\spidey-pub\MyProfileJohnDominique.dll
+C:\Users\boyle\AppData\Local\Temp\spidey-pub\MyProfileJohnDominique.deps.json
+C:\Users\boyle\AppData\Local\Temp\spidey-pub\MyProfileJohnDominique.runtimeconfig.json
+C:\Users\boyle\AppData\Local\Temp\spidey-pub\MyProfileJohnDominique.pdb
