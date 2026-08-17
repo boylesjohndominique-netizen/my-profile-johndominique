@@ -1,0 +1,1014 @@
+# ASP.NET Core MVC Personal Profile — iOS 26-Inspired UI/UX Prompt
+
+## ROLE
+
+Act as a professional UI/UX designer and ASP.NET Core MVC frontend developer.
+
+I am creating a **Personal Profile Web Page** for a Computer Laboratory Activity about:
+
+**Razor Syntax and HTML Helpers in ASP.NET Core MVC**
+
+The project must remain a simple educational ASP.NET Core MVC project, but the visual design should be significantly more polished, modern, unique, and aesthetically pleasing.
+
+Create an **iOS 26-inspired visual experience** using modern web technologies while maintaining a completely original design.
+
+Do not make the project unnecessarily complex.
+
+The core purpose is still to demonstrate:
+
+- Model
+- Controller
+- View
+- Razor Syntax
+- `@Model.Property`
+- `@Html.LabelFor()`
+- `@Html.TextBoxFor()`
+- `@Html.EditorFor()`
+- HTML `<form>`
+- Submit button
+- At least one additional HTML Helper
+
+The UI should enhance the assignment rather than distract from the MVC concepts.
+
+---
+
+# 1. OVERALL DESIGN CONCEPT
+
+Create a personal profile webpage that feels like a **personal digital identity card / modern portfolio profile**.
+
+The visual direction should be inspired by the design principles of modern iOS:
+
+- Liquid glass
+- Translucent surfaces
+- Soft blur
+- Layered depth
+- Floating elements
+- Large rounded corners
+- Minimal typography
+- Smooth animations
+- Subtle gradients
+- Soft shadows
+- Clean spacing
+- Responsive layout
+
+The design should feel:
+
+**Personal + Futuristic + Minimal + Premium + Student-Friendly**
+
+Do not directly copy Apple's interface.
+
+Do not use Apple's logo, proprietary graphics, or exact layouts.
+
+Instead, create an original interpretation of the aesthetic.
+
+---
+
+# 2. PAGE STRUCTURE
+
+Create a single polished profile page.
+
+Recommended structure:
+
+```text
+------------------------------------------------
+              Background / Ambient Glow
+------------------------------------------------
+
+             Floating Navigation
+        Home     Profile     About
+
+       ┌───────────────────────────┐
+       │                           │
+       │       Profile Photo       │
+       │                           │
+       │     JOHN DOMINIQUE        │
+       │     BS Information Tech   │
+       │                           │
+       │   "Short personal motto"  │
+       │                           │
+       └───────────────────────────┘
+
+        ┌──────────┐ ┌────────────┐
+        │   Age    │ │   Hobby    │
+        │    20    │ │  Coding    │
+        └──────────┘ └────────────┘
+
+       ┌───────────────────────────┐
+       │     Personal Details      │
+       │                           │
+       │ Name                      │
+       │ Course                    │
+       │ Age                       │
+       │ Hobby                     │
+       │ Favorite Subject          │
+       │ Career Goal               │
+       │ Motto                     │
+       └───────────────────────────┘
+
+       ┌───────────────────────────┐
+       │       Edit Profile        │
+       │                           │
+       │ Name       [___________]  │
+       │ Course     [___________]  │
+       │ Age        [___________]  │
+       │ Hobby      [___________]  │
+       │ Subject    [___________]  │
+       │ Career     [___________]  │
+       │                           │
+       │       [ Save Profile ]    │
+       └───────────────────────────┘
+
+------------------------------------------------
+              Footer / Motto
+------------------------------------------------
+```
+
+This is only a conceptual structure.
+
+Improve the arrangement if a better composition can be achieved.
+
+---
+
+# 3. BACKGROUND
+
+Create a sophisticated layered background.
+
+Instead of a plain background, use:
+
+- Very light gradient
+- Soft blue atmospheric glow
+- Large blurred circular shapes
+- Subtle translucent objects
+- Very low-opacity decorative elements
+
+Example visual concept:
+
+```text
+Background
+   ↓
+Soft blue gradient
+   ↓
+Large blurred glow
+   ↓
+Transparent floating shapes
+   ↓
+Glass profile card
+```
+
+The decorative background must remain subtle.
+
+Content must remain the visual focus.
+
+---
+
+# 4. COLOR PALETTE
+
+Use a clean blue-based visual identity.
+
+### Primary
+
+```css
+--primary: #3399FF;
+--primary-dark: #1877D3;
+--navy: #051F31;
+```
+
+### Background
+
+```css
+--background: #F4F8FC;
+--surface: rgba(255, 255, 255, 0.65);
+```
+
+### Text
+
+```css
+--text-primary: #051F31;
+--text-secondary: #64748B;
+```
+
+### Supporting
+
+```css
+--success: #34C759;
+--danger: #FF3B30;
+--border: rgba(255,255,255,0.55);
+```
+
+Keep the palette restrained.
+
+Blue should be the primary accent.
+
+---
+
+# 5. GLASSMORPHISM
+
+Use glass effects for major containers.
+
+Example concept:
+
+```css
+background: rgba(255, 255, 255, 0.65);
+backdrop-filter: blur(25px);
+-webkit-backdrop-filter: blur(25px);
+border: 1px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0 20px 50px rgba(...);
+```
+
+However:
+
+Do NOT apply glass effects to every element.
+
+Use glass primarily for:
+
+- Profile card
+- Navigation
+- Information card
+- Edit form
+- Floating buttons
+
+The result should look elegant rather than blurry.
+
+---
+
+# 6. PROFILE HERO
+
+The most important visual component should be the profile hero.
+
+Create a large centered glass card.
+
+Include:
+
+### Profile image
+
+Use a circular profile image with:
+
+- Large size
+- Rounded border
+- Soft glow
+- Slight elevation
+
+If no image is available, create a clean placeholder.
+
+### Name
+
+Display the student's name prominently.
+
+Example:
+
+**John Dominique G. Boyles**
+
+Use a large bold heading.
+
+### Course
+
+Example:
+
+**BS Information Technology**
+
+Use smaller muted text.
+
+### Personal motto
+
+Example:
+
+*"Build. Learn. Create."*
+
+Place it inside a subtle glass capsule or italicized secondary text.
+
+---
+
+# 7. PROFILE STATUS
+
+Add a subtle status indicator.
+
+Example:
+
+● Available for learning
+
+or:
+
+● Student Developer
+
+Use a small pill-shaped glass badge.
+
+This should be decorative and should not interfere with the assignment requirements.
+
+---
+
+# 8. PERSONAL INFORMATION CARDS
+
+Instead of displaying all information as plain paragraphs, create elegant information cards.
+
+Example:
+
+### AGE
+
+20
+
+### HOBBY
+
+Programming
+
+### FAVORITE SUBJECT
+
+C#.NET
+
+### CAREER GOAL
+
+Software Developer
+
+Each item should use:
+
+- Small uppercase label
+- Large value
+- Optional icon
+- Rounded glass surface
+
+Example:
+
+```text
+┌─────────────────────┐
+│ AGE                 │
+│                     │
+│ 20                  │
+│                     │
+│ Personal information│
+└─────────────────────┘
+```
+
+Use CSS Grid for responsive arrangement.
+
+---
+
+# 9. RAZOR SYNTAX VISUALIZATION
+
+The actual Razor expressions must remain functional.
+
+Use:
+
+```cshtml
+@Model.Name
+@Model.Course
+@Model.Age
+@Model.Hobby
+@Model.FavoriteSubject
+@Model.CareerGoal
+```
+
+Do not replace these with hardcoded HTML text.
+
+The visual design should wrap around the Razor-generated content.
+
+For example:
+
+```html
+<h1>@Model.Name</h1>
+<p>@Model.Course</p>
+```
+
+must remain dynamically generated through the Model.
+
+---
+
+# 10. PERSONAL DETAILS SECTION
+
+Create a section titled:
+
+**About Me**
+
+or
+
+**Personal Overview**
+
+Display the profile information using a clean two-column layout.
+
+Example:
+
+```text
+PERSONAL OVERVIEW
+
+Name              John Dominique G. Boyles
+Course            BS Information Technology
+Age               20
+Hobby             Photography
+Favorite Subject  C#.NET Programming
+Career Goal       Software Developer
+```
+
+Use icons and subtle separators.
+
+Avoid traditional table styling.
+
+---
+
+# 11. EDIT PROFILE FORM
+
+Create a beautiful glass form titled:
+
+**Edit Profile**
+
+or
+
+**Update My Profile**
+
+The form must still use the required HTML Helpers.
+
+Required:
+
+```cshtml
+@Html.LabelFor(model => model.Name)
+@Html.TextBoxFor(model => model.Name)
+
+@Html.LabelFor(model => model.Course)
+@Html.TextBoxFor(model => model.Course)
+
+@Html.LabelFor(model => model.Age)
+@Html.EditorFor(model => model.Age)
+
+@Html.LabelFor(model => model.Hobby)
+@Html.TextBoxFor(model => model.Hobby)
+
+@Html.LabelFor(model => model.FavoriteSubject)
+@Html.TextBoxFor(model => model.FavoriteSubject)
+
+@Html.LabelFor(model => model.CareerGoal)
+@Html.TextBoxFor(model => model.CareerGoal)
+```
+
+Do not remove the HTML Helpers simply to make the design easier.
+
+The HTML Helpers are part of the assignment.
+
+---
+
+# 12. FORM DESIGN
+
+Make each input look like an iOS-inspired input field.
+
+Example:
+
+```text
+Name
+┌────────────────────────────────────┐
+│ John Dominique G. Boyles           │
+└────────────────────────────────────┘
+```
+
+Use:
+
+- Rounded input
+- Soft background
+- Minimal border
+- Comfortable padding
+- Large readable text
+- Smooth focus animation
+
+Focus state:
+
+```text
+Normal
+→ subtle border
+
+Focused
+→ blue border
+→ subtle blue glow
+→ slight background change
+```
+
+---
+
+# 13. ADDITIONAL HTML HELPER
+
+Use one additional HTML Helper to satisfy the challenge requirement.
+
+Prefer:
+
+```cshtml
+@Html.TextAreaFor(...)
+```
+
+for the student's motto/about section.
+
+Alternatively use:
+
+```cshtml
+@Html.CheckBox(...)
+```
+
+or:
+
+```cshtml
+@Html.RadioButton(...)
+```
+
+or:
+
+```cshtml
+@Html.DropDownList(...)
+```
+
+Choose the helper that fits naturally with the personal profile.
+
+Recommended:
+
+**TextAreaFor()**
+
+because it allows the student to enter a personal motto or short introduction.
+
+---
+
+# 14. SAVE BUTTON
+
+Create a prominent modern button:
+
+**Save Profile**
+
+Design:
+
+- Blue accent
+- Rounded shape
+- Slight gradient
+- Soft shadow
+- White text
+- Optional save icon
+
+Hover:
+
+```text
+Slightly lift
++ brighten
+```
+
+Press:
+
+```text
+Slight scale-down
+```
+
+Use approximately:
+
+```css
+transform: scale(0.97);
+```
+
+for the pressed state.
+
+---
+
+# 15. BUTTON MICRO-INTERACTION
+
+Make the button feel tactile.
+
+Animation:
+
+```text
+Rest
+ ↓
+Hover
+ ↓
+Slight elevation
+ ↓
+Press
+ ↓
+Scale down
+ ↓
+Release
+ ↓
+Return smoothly
+```
+
+Keep the animation subtle.
+
+---
+
+# 16. ICONS
+
+Use one consistent icon library.
+
+Possible:
+
+**Boxicons**
+
+or another lightweight icon library.
+
+Use icons for:
+
+- Person
+- Graduation cap
+- Calendar
+- Hobby
+- Book
+- Career
+- Email
+- Save
+- Edit
+
+Do not use an icon for every piece of text.
+
+Icons should improve scanning.
+
+---
+
+# 17. NAVIGATION
+
+Because this is a small student project, keep navigation minimal.
+
+Use a small floating navigation pill.
+
+Example:
+
+```text
+╭──────────────────────────────╮
+│  ✦ My Profile   About   Edit │
+╰──────────────────────────────╯
+```
+
+The navigation should not pretend this is a large enterprise system.
+
+It should simply improve the presentation.
+
+---
+
+# 18. ANIMATION
+
+Use subtle page animations.
+
+On page load:
+
+1. Background fades in
+2. Navigation appears
+3. Profile card rises slightly
+4. Information cards appear
+5. Form appears
+
+Use staggered animation.
+
+Example:
+
+```text
+opacity: 0 → 1
+transform: translateY(20px) → translateY(0)
+```
+
+Use approximately 300–600ms.
+
+Do not over-animate.
+
+---
+
+# 19. FLOATING DECORATIVE ELEMENTS
+
+Add subtle floating shapes behind the main profile card.
+
+Examples:
+
+- Blue translucent circle
+- White glass sphere
+- Small gradient orb
+- Abstract rounded rectangle
+
+Use:
+
+```css
+filter: blur(...);
+opacity: ...;
+```
+
+Keep them behind the content.
+
+---
+
+# 20. RESPONSIVE DESIGN
+
+The page must work on:
+
+### Desktop
+
+Use:
+
+- Large centered profile
+- Two-column content
+- Information grid
+- Large form
+
+### Tablet
+
+Reduce:
+
+- Card width
+- Spacing
+- Typography
+
+### Mobile
+
+Stack everything vertically.
+
+Recommended order:
+
+1. Navigation
+2. Profile hero
+3. Quick information
+4. Personal details
+5. Edit profile
+6. Footer
+
+Inputs should be full width.
+
+Buttons should be easy to tap.
+
+Do not allow horizontal scrolling.
+
+---
+
+# 21. MOBILE EXPERIENCE
+
+On mobile, the profile card should remain visually impressive.
+
+Use:
+
+- Large profile image
+- Centered name
+- Compact information cards
+- Full-width form
+- Large touch targets
+
+The page should feel like a mobile profile application rather than a desktop page squeezed onto a phone.
+
+---
+
+# 22. DARK MODE
+
+If implementing dark mode, use a sophisticated dark appearance.
+
+Background:
+
+```text
+Deep navy / almost black
+```
+
+Glass:
+
+```text
+rgba(20, 25, 35, 0.65)
+```
+
+Accent:
+
+```text
+Bright blue
+```
+
+Text:
+
+```text
+White
+Soft gray
+```
+
+Use subtle blue ambient glow.
+
+Do not simply invert the entire webpage.
+
+---
+
+# 23. FOOTER
+
+Keep the footer minimal.
+
+Example:
+
+```text
+Designed & Built with ASP.NET Core MVC
+
+"Learn. Create. Improve."
+```
+
+Include the student's name if appropriate.
+
+---
+
+# 24. MVC REQUIREMENTS MUST REMAIN INTACT
+
+Do not break the architecture.
+
+Maintain:
+
+```text
+Models
+    Profile.cs
+
+Controllers
+    ProfileController.cs
+
+Views
+    Profile
+        Index.cshtml
+```
+
+The controller must pass the Profile object to the View.
+
+Example:
+
+```csharp
+return View(profile);
+```
+
+The View must declare:
+
+```cshtml
+@model StudentMVC.Models.Profile
+```
+
+Use Razor syntax dynamically.
+
+Do not hardcode the profile information into the HTML.
+
+---
+
+# 25. MODEL
+
+The model should contain at least the required six properties.
+
+Example:
+
+```csharp
+public class Profile
+{
+    public string Name { get; set; }
+    public string Course { get; set; }
+    public int Age { get; set; }
+    public string Hobby { get; set; }
+    public string FavoriteSubject { get; set; }
+    public string CareerGoal { get; set; }
+
+    // Additional property
+    public string Motto { get; set; }
+}
+```
+
+The additional property should contribute to the unique design.
+
+---
+
+# 26. CONTROLLER
+
+The controller should initialize the profile data.
+
+Use the student's actual information rather than the sample information.
+
+Example:
+
+```csharp
+Profile profile = new Profile()
+{
+    Name = "...",
+    Course = "...",
+    Age = 20,
+    Hobby = "...",
+    FavoriteSubject = "...",
+    CareerGoal = "...",
+    Motto = "..."
+};
+```
+
+Do not introduce unnecessary databases, APIs, authentication, or advanced architecture.
+
+This is a laboratory activity.
+
+Keep it understandable.
+
+---
+
+# 27. VIEW
+
+The View should combine:
+
+- Razor Syntax
+- HTML
+- CSS
+- HTML Helpers
+
+Keep the Razor code readable.
+
+Use semantic HTML.
+
+Avoid generating unnecessarily complicated markup.
+
+---
+
+# 28. UNIQUE DESIGN REQUIREMENT
+
+The webpage must visibly look different from the basic classroom example.
+
+Do NOT produce:
+
+```text
+My Personal Profile
+
+Name: John
+Course: BSIT
+Age: 20
+Hobby: Coding
+...
+```
+
+with a plain form underneath.
+
+Instead, transform the information into a carefully designed profile experience.
+
+The assignment's data should remain simple.
+
+The presentation should be unique.
+
+---
+
+# 29. VISUAL HIERARCHY
+
+Prioritize content in this order:
+
+1. Student's identity
+2. Profile image
+3. Course
+4. Personal motto
+5. Important profile information
+6. Edit form
+7. Additional information
+
+The visitor should understand whose profile they are viewing within a few seconds.
+
+---
+
+# 30. DESIGN QUALITY
+
+Before completing the UI, check:
+
+### Visual
+
+- Does it feel modern?
+- Does it look premium?
+- Is the glass effect subtle?
+- Is there enough whitespace?
+- Are the cards too repetitive?
+- Is the blue accent balanced?
+
+### UX
+
+- Is the student's information easy to understand?
+- Is the form easy to use?
+- Are labels clear?
+- Are buttons obvious?
+- Does the mobile layout work?
+
+### Assignment
+
+Verify that all required components remain present:
+
+- Model ✓
+- Controller ✓
+- View ✓
+- `@model` ✓
+- `@Model.Property` ✓
+- `LabelFor()` ✓
+- `TextBoxFor()` ✓
+- `EditorFor()` ✓
+- HTML `<form>` ✓
+- Submit button ✓
+- Additional HTML Helper ✓
+- Unique output ✓
+
+---
+
+# 31. FINAL OUTPUT EXPECTATION
+
+The final output should combine:
+
+**iOS 26-inspired glass design**
+
++
+
+**Modern portfolio aesthetics**
+
++
+
+**Clean student profile design**
+
++
+
+**ASP.NET Core MVC functionality**
+
+The final result should make the instructor immediately see that the required MVC, Razor Syntax, and HTML Helpers are being used while also making the webpage visually distinctive from the standard classroom example.
+
+Prioritize:
+
+**Cleanliness > Effects**
+
+**Usability > Decoration**
+
+**Hierarchy > Complexity**
+
+**Originality > Copying**
+
+**Functionality > Animation**
+
+Make it look like a carefully designed personal webpage, not a generic school assignment template.

@@ -1,0 +1,194 @@
+@model StudentMVC.Models.Profile
+
+@{
+    ViewData["Title"] = "My Personal Profile";
+
+    var courseList = new List<SelectListItem>
+    {
+        new SelectListItem { Text = "BS Information Technology", Value = "BS Information Technology" },
+        new SelectListItem { Text = "BS Computer Science", Value = "BS Computer Science" },
+        new SelectListItem { Text = "BS Information Systems", Value = "BS Information Systems" },
+        new SelectListItem { Text = "BS Computer Engineering", Value = "BS Computer Engineering" }
+    };
+}
+
+<section class="profile-page" aria-labelledby="profile-title">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+
+    <nav class="glass-nav" aria-label="Profile sections">
+        <a href="#profile" class="nav-brand">
+            <span class="nav-spark">✦</span>
+            My Profile
+        </a>
+        <a href="#overview">About</a>
+        <a href="#edit">Edit</a>
+    </nav>
+
+    <div class="profile-shell">
+        <header id="profile" class="profile-hero glass-panel rise-in">
+            <div class="status-pill">
+                <span class="status-dot"></span>
+                Student Developer
+            </div>
+
+            <div class="avatar-wrap" aria-label="Profile initials">
+                <div class="avatar-ring">
+                    <span>JD</span>
+                </div>
+            </div>
+
+            <p class="eyebrow">My Profile</p>
+            <h1 id="profile-title">@Model.Name</h1>
+            <p class="course-line">@Model.Course</p>
+            <p class="motto-pill">"@Model.Motto"</p>
+        </header>
+
+        <section class="quick-grid" aria-label="Quick profile information">
+            <article class="info-card glass-panel rise-in delay-one">
+                <span class="info-icon">🎂</span>
+                <p>Age</p>
+                <strong>@Model.Age</strong>
+            </article>
+
+            <article class="info-card glass-panel rise-in delay-two">
+                <span class="info-icon">🎨</span>
+                <p>Hobby</p>
+                <strong>@Model.Hobby</strong>
+            </article>
+
+            <article class="info-card glass-panel rise-in delay-three">
+                <span class="info-icon">📘</span>
+                <p>Favorite Subject</p>
+                <strong>@Model.FavoriteSubject</strong>
+            </article>
+
+            <article class="info-card glass-panel rise-in delay-four">
+                <span class="info-icon">💻</span>
+                <p>Career Goal</p>
+                <strong>@Model.CareerGoal</strong>
+            </article>
+        </section>
+
+        <section id="overview" class="content-grid">
+            <article class="overview-card glass-panel rise-in delay-two">
+                <div class="section-heading">
+                    <p class="eyebrow">Personal Overview</p>
+                    <h2>About Me</h2>
+                </div>
+
+                <dl class="detail-list">
+                    <div>
+                        <dt>Name</dt>
+                        <dd>@Model.Name</dd>
+                    </div>
+                    <div>
+                        <dt>Course</dt>
+                        <dd>@Model.Course</dd>
+                    </div>
+                    <div>
+                        <dt>Age</dt>
+                        <dd>@Model.Age</dd>
+                    </div>
+                    <div>
+                        <dt>Hobby</dt>
+                        <dd>@Model.Hobby</dd>
+                    </div>
+                    <div>
+                        <dt>Favorite Subject</dt>
+                        <dd>@Model.FavoriteSubject</dd>
+                    </div>
+                    <div>
+                        <dt>Career Goal</dt>
+                        <dd>@Model.CareerGoal</dd>
+                    </div>
+                    <div>
+                        <dt>Email</dt>
+                        <dd>@Model.Email</dd>
+                    </div>
+                    <div>
+                        <dt>Motto</dt>
+                        <dd>@Model.Motto</dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="razor-card glass-panel rise-in delay-three">
+                <p class="eyebrow">Razor Syntax</p>
+                <h2>My Profile Activity</h2>
+                <p>
+					This is created solely for the purpose of demonstrating the use of Razor syntax in ASP.NET Core MVC. 
+                    The profile information is dynamically rendered using Razor expressions, allowing for a seamless integration 
+                    of C# code within the HTML markup.
+                </p>
+                <div class="code-chip-row" aria-label="Required MVC features">
+                    <span>@Model.Name</span>
+                    <span>@Model.Course</span>
+                    <span>@Model.FavoriteSubject</span>
+                </div>
+            </article>
+        </section>
+
+        <section id="edit" class="edit-card glass-panel rise-in delay-four" aria-labelledby="edit-title">
+            <div class="section-heading">
+                <p class="eyebrow">HTML Helpers</p>
+                <h2 id="edit-title">Update My Profile</h2>
+            </div>
+
+            <form class="profile-form">
+                <div class="form-grid">
+                    <div class="field">
+                        @Html.LabelFor(model => model.Name)
+                        @Html.TextBoxFor(model => model.Name)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.Course)
+                        @Html.DropDownListFor(model => model.Course, courseList)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.Age)
+                        @Html.EditorFor(model => model.Age)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.Hobby)
+                        @Html.TextBoxFor(model => model.Hobby)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.FavoriteSubject)
+                        @Html.TextBoxFor(model => model.FavoriteSubject)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.CareerGoal)
+                        @Html.TextBoxFor(model => model.CareerGoal)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.Email)
+                        <input id="Email" name="Email" type="email" value="@Model.Email" />
+                    </div>
+
+                    <div class="field field-wide">
+                        @Html.LabelFor(model => model.Motto)
+                        @Html.TextAreaFor(model => model.Motto)
+                    </div>
+                </div>
+
+                <button type="submit" class="save-button">
+                    <span aria-hidden="true">💾</span>
+                    Save Profile
+                </button>
+            </form>
+        </section>
+
+        <footer class="profile-footer">
+            <p>Created by John Dominique G. Boyles</p>
+            <strong>"c# Activity Project"</strong>
+        </footer>
+    </div>
+</section>
