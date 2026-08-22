@@ -1,0 +1,27 @@
+## Build output
+[Bb]in/
+[Oo]bj/
+
+## Visual Studio
+.vs/
+
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+## ASP.NET scaffolding
+ScaffoldingReadMe.txt
+
+## IDE
+.idea/
+*.swp
+*~
+.DS_Store
