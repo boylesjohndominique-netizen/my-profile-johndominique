@@ -5,7 +5,9 @@ namespace StudentMVC.Models
         public string Name { get; set; } = string.Empty;
         public string Course { get; set; } = string.Empty;
         public int Age { get; set; }
+        public string Gender { get; set; } = string.Empty;
         public string Hobby { get; set; } = string.Empty;
+        public List<string> Hobbies { get; set; } = new List<string>();
         public string FavoriteSubject { get; set; } = string.Empty;
         public string CareerGoal { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
